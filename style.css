@@ -694,7 +694,6 @@ blockquote {
     display:inline-flex;
     /* margin: 2%; */
     gap: 0px;
-    /* background-color: var(--bw-bg-color); */
     border-left: 5px solid var(--main-color);
     border-top: 5px solid var(--main-color);
     border-radius: 5px;
