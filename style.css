@@ -1080,7 +1080,8 @@ box-shadow: 0 0 1rem var(--main-color);
   .contact_bottom {
     padding: 10px 100px 50px;
     background: whitesmoke;
-    border-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     
   }
   
@@ -1130,6 +1131,7 @@ box-shadow: 0 0 1rem var(--main-color);
     margin-right: 30px;
     background-color: var(--bg-color);
     border-radius: 10px;
+   
     padding: 2%;
   }
   
@@ -1208,8 +1210,13 @@ box-shadow: 0 0 1rem var(--main-color);
   }
   
    @media screen and (max-width: 600px){
+    .contact{
+        
+        padding: 1%;
+    }
     .contact h3{
-        margin-top: 80rem;
+        position: relative;
+
     }
     .about-header1{
         font-size: px;
@@ -1496,6 +1503,7 @@ box-shadow: 0 0 1rem var(--main-color);
     position: relative;
     height: 40px;
     width: 40px;
+    /* margin: 0 10px; */
     display: block;
     background-color: #0ef;
     text-align: center;
@@ -1505,11 +1513,12 @@ box-shadow: 0 0 1rem var(--main-color);
 }
 .social-media .icon a i{
     color: #fff;
+    /* text-align: center; */
+    margin: 0 -10px;
 }
 .social-media .icon a i{
     font-size: 25px;
-    line-height: 40px;
-
+    line-height: 25px;
     }
 .social-media .icon .tooltip{
     position: absolute;
@@ -1526,7 +1535,7 @@ box-shadow: 0 0 1rem var(--main-color);
     }
     .social-media .icon:hover .tooltip {
         bottom: -20px;
-        opacity: 1;
+        opacity: 0;
         pointer-events: auto;
         font-style:italic;
         font-size: 15px;
@@ -1591,6 +1600,9 @@ box-shadow: 0 0 1rem var(--main-color);
     background: var(--main-color);
     color:var(--second-bg-color);
     box-shadow:0 0 1rem var(--main-color);
+}
+.portfolio{
+    height:250%
 }
 @media(max-width:455px){
         html{
