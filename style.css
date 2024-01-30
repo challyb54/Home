@@ -703,21 +703,13 @@ blockquote {
 } 
  .blockquote3{
     width: 80%;
-    /* width: 50%;
-    margin: 0 30 6 0;
-    padding:1rem;
-    padding-bottom: 0rem; 
-    background-color: #5e4a07;
-    text-align: center;*/ 
     line-height:1.7;
     font-size: 1.5rem;
-    /* font-family: 'Courier New', Courier, monospace; */
     border-radius: 0px;
     padding: 2%;
     color: var(--text-color);
     justify-content: center;
     text-align: justify;
-    /* border-width: 20px; */
 
 }
 .blockquote3 p{
@@ -991,7 +983,17 @@ box-shadow: 0 0 1rem var(--main-color);
     font-size: 2rem;
     color: var(--second-bg-color);
 }
-/*contact section*/
+
+/*contact section/////////////////////////////////////////////////////*/
+.contact{
+    
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    padding: 70px 20px 0px 20px;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+} 
 .contact h3{
     /* margin-bottom: 0rem;*/
     margin-top: 3rem; 
@@ -1007,58 +1009,6 @@ box-shadow: 0 0 1rem var(--main-color);
     color: white
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
-
-/* :root {
-  --bg-clr: #e9e9e9;
-  --text-clr: #3e3e3e;
-  --sub-text-clr: #fea1ab;
-  --white: #fff;
-  --primary-clr: #ff3b49;
-} */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  outline: none;
-  font-family: "Ubuntu", sans-serif;
-} */
-
-
-.contact{
-    
-    font-size: 14px;
-    line-height: 20px;
-    color: black;
-    padding: 70px 20px 0px 20px;
-    margin-top: 1rem;
-    margin-bottom: 0px;
-} 
 .contactBody{
     width: 96%;
     max-width: 100%;
@@ -1066,8 +1016,6 @@ box-shadow: 0 0 1rem var(--main-color);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     position: relative;
 }
-
-
 
 .contact_top {
     padding: 30px 100px;
