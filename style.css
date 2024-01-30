@@ -450,7 +450,7 @@ span1{
 .btn:hover i{
     transform: translateX(6px);}
 
-.heading{
+.about-header1 h2 {
     text-align: center;
     font-size: 4.5rem;
 }
@@ -461,6 +461,13 @@ span1{
     margin: auto;
     padding: 3px 10px;
     background: var(--second-bg-color);
+}
+.about-content-right-container h2{
+    text-align: center;
+    font-size: 4rem;
+    padding-left: 5%;
+    
+  
 }
 .about-header1 {
     width: 96%;
@@ -516,18 +523,19 @@ span1{
 }
 .pages{
     width: 98%;
-    height: 500px;
-    margin: 0px 10px;
+    height: fit-content;
+    margin: 20px 10px;
     display: flex;
     align-items: center;
     overflow-x: auto;
+    font-size: 16px;
 }
 .pages::-webkit-scrollbar{
     display: none;
 }
  .product{
     min-width: 48%;
-    height:400px;
+    height:500px;
     background: var(--hd-bg-color);
     margin:  0 30px 0 0px;
     border-bottom-left-radius: 10px;
@@ -581,34 +589,30 @@ position: absolute;
 @media (max-width: 768px) {
     .heading h2{
         font-size: 1rem;
+        min-width: 99%;
+        margin-left: 2px;
     }
-    .text h1{
-        font-size: 35px;
-    }
-    .text p{
+    .heading p{
         width: 90%;
     }
     header h1{
         font-size: 25px;
     }
-    header p span{
-        font-size: 30px;
+    .heading p scroll{
+        font-size: 100px;
     }
     section .product {
         min-width: 99%;
-        margin:  0 10px  0 0;
+        margin-left: 2px;
+        /* margin:  0 10px  0 0; */
     }
-    .detail, .button{
-        font-size: 16px;
-    }
-    a{
-        padding: 6px 10px;
-    }
+    
 }
 .about-content-right-container {
     /* background-color:var(--hd-bg-color2); */
     border-radius: 5px;
     margin: -1.5% 1%;
+    position: relative;
     color: black;
     background-color:whitesmoke;
 } 
@@ -653,12 +657,6 @@ blockquote {
 } 
  .blockquote1{
     width: 60%;
-    /* width: 50%;
-    margin: 0 30 6 0;
-    padding:1rem;
-    padding-bottom: 0rem; 
-    background-color: #5e4a07;*/
-    /* text-align: justify; */
     line-height:1.8;
     font-size: 1.6rem;
     font-family: 'Courier New', Courier, monospace;
@@ -668,12 +666,7 @@ blockquote {
     border-left: 2px solid var(--main-color);
 }
 .blockquote2{
-    /* width: 50%;
-    margin:-25% 30 6 50%;
-    padding:1rem;
-    padding-bottom: 0rem; */
     background-color: #faf9fa;
-    /* */
     line-height:1.8;
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
@@ -743,15 +736,11 @@ blockquote {
 }
 .work{
     background-color: var(--hd-bg-color);
-    /* display:inline-flex; */
-    /* margin: 2%; */
-     justify-content: space-between; 
+    justify-content: space-between; 
     padding: 2%;
     /* color: gold; */
     
     color: var(--text-color);
-    /* background-color: var(--bw-bg-color); */
-    /* border-right: 5px solid var(--main-color); */
     border-top: 5px solid var(--main-color);
     /* border-radius: 5px; */
     height: fit-content;
@@ -761,9 +750,6 @@ blockquote {
     bottom: 0px; 
     list-style-type:none;
     display:inline-flex;
-
-    /* text-align: justify; */
-
 }
 .work p1{
     padding-left: 2px;
@@ -877,11 +863,11 @@ blockquote {
 .services-box i{
     font-size:3rem;
     color: rgb(255, 208, 0);
-  border-radius: 30px;
+    border-radius: 30px;
     border-style:dashed;
     border-color:#0ef;
     padding: 5px;
-box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
 .services-box h3{
     font-size: 2.6rem;
@@ -921,9 +907,7 @@ box-shadow: 0 0 1rem var(--main-color);
 }
 .portfolio-container .portfolio-box{
     position:relative;
- 
-    
-     border-radius:2rem; 
+    border-radius:2rem; 
     box-shadow: 0 0 1rem var(--bg-color);
     overflow:hidden;
     display: flex;
@@ -933,9 +917,6 @@ box-shadow: 0 0 1rem var(--main-color);
     width: 100%;
     height: 200px;
     transition: .5s ease;
-    /* border-end-end-radius: 20px;
-    border-end-start-radius: 20px; */
-    /* margin-top: 10px; */
     padding:10px;
     
 }
@@ -1035,7 +1016,7 @@ box-shadow: 0 0 1rem var(--main-color);
   .contact_top .get_in_touch,
   .contact_top .address {
     width: 50%;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: 50px;
     border-left: 2px solid var(--main-color);
     border-radius: 5px;
@@ -1161,12 +1142,17 @@ box-shadow: 0 0 1rem var(--main-color);
         
         padding: 1%;
     }
-    .contact h3{
+    .get_in_touch h2{
         position: relative;
+        padding-top: 0px;
+        margin-top: -5%;
+        align-content: space-evenly;
+       
+        border: none;
 
     }
     .about-header1{
-        font-size: px;
+        font-size: 0px;
     }
     .contact_form{
         margin: 5%;
@@ -1174,11 +1160,13 @@ box-shadow: 0 0 1rem var(--main-color);
         height: 400px;
     }
      .contact_top{
-       padding: 30px 50px;
+       padding: 10px 20px;
+       /* margin-top: -10px; */
      }
      .contact_top .get_in_touch,
      .contact_top .address{
        width: 100%;
+
      }
      .contact_form{
        position: relative;
@@ -1202,8 +1190,6 @@ box-shadow: 0 0 1rem var(--main-color);
        justify-content: start;
      }
   }
-
-
 
 .footer{
     display:flex;
@@ -1338,25 +1324,29 @@ box-shadow: 0 0 1rem var(--main-color);
     align-content: space-between;
     margin-top: 100px;
     padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
         
 
     }
     .about-header1 h2{
         font-size:20px;
         padding-left: 0px;
-       
-    }
-    .heading p{
-        font-size: 15px;
-    }
-  
-    .pages{
-       position:relative;
-       margin-top: -10%;
         margin-left: auto;
         margin-right: auto;
        
-
+    }
+    .about-header1 p ,
+    .about-header1 p scroll{
+        font-size: 15px;
+    }
+   
+  
+    .pages{
+       position:relative;
+       margin-top: 0%;
+       margin-left: auto;
+       margin-right: auto;
     }
     .about-content-right-container img{
         width: 70px;
@@ -1429,9 +1419,9 @@ box-shadow: 0 0 1rem var(--main-color);
         text-indent: 20px;
         text-align: justify;
     }
-    .about-header1{
+    /* .about-header1{
         font-size: 25px;
-    }
+    } */
 .social-media{
     display: inline-flex;
     padding-top: 1rem;
