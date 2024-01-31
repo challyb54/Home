@@ -1349,87 +1349,11 @@ blockquote {
         margin-left: 10%;
         
     }   
-    .about-header2 h2{
-        font-size:4rem;
-        display: flex;
-        text-align: center;
-        /* padding-left: 2%; */
-        /* margin-left: auto;
-        margin-right: auto;
-        */
-    }
-    .about-header2 p ,
-    .about-header2 p scroll{
-        font-size: 13px;
-        opacity: 0;
-    }
-    .about-header2 p scroll{
-        font-size: 15px;
-        margin: 0 10px;
-        cursor: pointer;
-        color: var(--main-color);
-         width: 20px;
-        height: 20px;
-        background-color: transparent;
-        display: inline-block;
-        line-height: 20px;
-        text-align: center;
-        border-radius: 50%;
-        padding: 0px;
-        background:white;
-        opacity: 0;
-    
-    }
-    .about-header2 p scroll:hover{
-        color: white;
-        background-color: var(--main-color);
-        padding: 0px;
-        opacity: 0
-        box-shadow:0 0 1rem var(--main-color);
-    }
-    section .product {
-        min-width: 99%;
-        margin-left: 2px;
-    
-        /* margin:  0 10px  0 0; */
-    }
+   
 
    
   
-    .pages{
-       position:relative;
-       
-       margin-left: auto;
-       margin-right: auto;
-       height: 100%;
-      
- ;
-       
-      
-    }
-    .about-content-right-container img{
-        width: 70px;
-        margin-top: 20px;
-        height: 70px;
-        
-        
-    }
-    .detail h2{
-        /* font-size: 30px; */
-        padding-left: 15%;
-        padding-top: 50px;
-        font-size: 200%;
-        }
-        .detail p{
-            font-size: 90%;
-            text-align: justify;
-            padding: 1%;
-        }
-        blockquote{
-            margin: 1% 2% 1% 5%;
-            font-size: 80%;
 
-        }
     .home-img img{
         width: 70vw;
         margin-top: 0rem;
@@ -1479,14 +1403,59 @@ blockquote {
         line-height: 1.5;
         text-indent: 20px;
         text-align: justify;
-    } 
+    }  
     
-/* .about{
+.about1{
     width: 100%;
+    display: none;
   
-    margin: auto;
-    padding: 3px 10px;
+
+    /* padding: 3px 10px; */
     background: var(--second-bg-color);
+}
+.about-header2 h2{
+    font-size:4rem;
+    display: flex;
+    text-align: center;
+    /* padding-left: 2%; */
+    /* margin-left: auto;
+    margin-right: auto;
+    */
+}
+.about-header2 p ,
+.about-header2 p scroll{
+    font-size: 13px;
+    opacity: 0;
+}
+.about-header2 p scroll{
+    font-size: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: var(--main-color);
+     width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0px;
+    background:white;
+    opacity: 0;
+
+}
+.about-header2 p scroll:hover{
+    color: white;
+    background-color: var(--main-color);
+    padding: 0px;
+    opacity: 0
+    box-shadow:0 0 1rem var(--main-color);
+}
+/* section .product {
+    min-width: 99%;
+    margin-left: 2px;
+
+    /* margin:  0 10px  0 0; */
 } */
 /* .about-content-right-container h2{
     text-align: center;
@@ -1520,6 +1489,84 @@ blockquote {
     /* padding-left: 30px; */
     /* font-size: 40px; 
 } */
+
+    /* .pages{
+       position:relative;
+       
+       margin-left: auto;
+       margin-right: auto;
+       height: 100%;
+      opacity:0;
+ 
+       
+      
+    }
+    .about-content-right-container img{
+        width: 70px;
+        margin-top: 20px;
+        height: 70px;
+        opacity: 0;
+        
+        
+    }
+    .detail h2{
+        /* font-size: 30px; 
+        padding-left: 15%;
+        padding-top: 50px;
+        font-size: 200%;
+        opacity: 0;
+
+        }
+        .detail p{
+            font-size: 90%;
+            text-align: justify;
+            padding: 1%;
+            opacity: 0;
+        }
+        blockquote{
+            margin: 1% 2% 1% 5%;
+            font-size: 80%;
+            opacity:0;
+
+        }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .social-media{
