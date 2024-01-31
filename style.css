@@ -454,6 +454,10 @@ span1{
     font-size: 4rem;
     padding-left: 5%;
 }
+span{
+    color:var(--main-color);
+    padding-left: 10px;
+}
 .about-header1 h2 {
     text-align: center;
     font-size: 4.5rem;
@@ -816,7 +820,7 @@ blockquote {
 /*services section*/
 .services h2{
     margin-bottom: 2rem;
-    background-color:var(--hd-bg-color2);
+    background-color:var(--hd-bg-color);
     border-radius: 5px;
 }
 .services-container{
@@ -847,21 +851,21 @@ blockquote {
     box-shadow: none;
     color: var(--bg-color);
 }
-.services-container .services-box:nth-child(1):hover{
+.services-container .services-box:nth-child(1){
     background: linear-gradient(45deg,
                                    rgba(88, 70, 159, 0.7) 0% ,
                                    rgba(136, 113, 199, 0.7)100% ) ,
                                     url('bg1.jpg');
                                     background-size: cover;
 }
-.services-container .services-box:nth-child(2):hover{
+.services-container .services-box:nth-child(2){
     background: linear-gradient(45deg,
                                    rgba(88, 70, 159, 0.7) 0% ,
                                    rgba(136, 113, 199, 0.7)100% ) ,
                                     url('bg2.jpg');
                                     background-size: cover;
 }
-.services-container .services-box:nth-child(3):hover{
+.services-container .services-box:nth-child(3){
     background: linear-gradient(45deg,
                                    rgba(88, 70, 159, 0.7) 0% ,
                                    rgba(136, 113, 199, 0.7)100% ) ,
@@ -893,6 +897,8 @@ blockquote {
 .portfolio h2{
     margin-bottom: 1rem;
     background-color:var(--hd-bg-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
  
 }  
 .portfolio-container {
@@ -1018,7 +1024,7 @@ blockquote {
   }
   
   .contact_bottom {
-    padding: 10px 100px 50px;
+    padding: 10px 100px 50px 30px;
     background: whitesmoke;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1068,11 +1074,16 @@ blockquote {
   }
   
   .contact_bottom .about{
-    margin-right: 30px;
+    /* margin-right: 30px; */
     background-color: var(--bg-color);
     border-radius: 10px;
-   
+    width: 60%;
+    margin-left: 0px;
     padding: 2%;
+
+  }
+  .contact_bottom .about h2{
+    color: red;
   }
   
   .address ul li .icon,
@@ -1188,14 +1199,20 @@ blockquote {
        padding: 20px 30px;
        border-top: 2px solid var(--bg-clr)
      }
-     .contact_bottom{
-       padding: 20px 30px;
+     .contact_bottom .about{
+        
+        margin: 0px;
+        width: fit-content;
+        width: 120%;
+      
+       /* width: fit-content; */
      }
      .contact_bottom .info{
        flex-direction: column;
      }
      .contact_bottom .info .about{
        margin-bottom: 30px;
+       
      }
      .contact_bottom .nav_links ul    {
        flex-wrap: wrap;
@@ -1245,6 +1262,7 @@ blockquote {
     section{
         padding: 7rem 3% 2rem;
     }
+    
     .services{
         padding-bottom:9rem;
     }
@@ -1334,32 +1352,20 @@ blockquote {
     .header a{ 
         margin-left: 10%;
         
-    }
-    .about{
-        /* padding-top: %; */
-        /* margin-left: -1%; */
-        /* margin-right: auto; */
-        /* margin-top: 20%; */
-    }
-    .about-header2{
-    align-content: space-between;
-    /* margin-top: 100px; */
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-        
-
-    }
+    }   
     .about-header2 h2{
-        font-size:18px;
-        padding-left: 2%;
-        margin-left: auto;
+        font-size:4rem;
+        display: flex;
+        text-align: center;
+        /* padding-left: 2%; */
+        /* margin-left: auto;
         margin-right: auto;
-       
+        */
     }
     .about-header2 p ,
     .about-header2 p scroll{
         font-size: 13px;
+        opacity: 0;
     }
     .about-header2 p scroll{
         font-size: 15px;
@@ -1375,14 +1381,17 @@ blockquote {
         border-radius: 50%;
         padding: 0px;
         background:white;
+        opacity: 0;
     
     }
     .about-header2 p scroll:hover{
         color: white;
         background-color: var(--main-color);
         padding: 0px;
+        opacity: 0
         box-shadow:0 0 1rem var(--main-color);
     }
+
    
   
     .pages{
@@ -1391,8 +1400,9 @@ blockquote {
        margin-left: auto;
        margin-right: auto;
        height: 100%;
-       margin-top: -23%;
+       margin-top: -15%;
        /* margin:-17% 10px; */
+       
       
     }
     .about-content-right-container img{
@@ -1400,12 +1410,13 @@ blockquote {
         margin-top: 20px;
         height: 70px;
         
+        
     }
     .detail h2{
         /* font-size: 30px; */
         padding-left: 15%;
         padding-top: 50px;
-        font-size: 120%;
+        font-size: 200%;
         }
         .detail p{
             font-size: 90%;
@@ -1446,7 +1457,7 @@ blockquote {
             padding: 3px;
             margin-bottom: -1%;
             margin-top: 2%;
-            /* margin: 5px; */
+             margin: 5px;
             border: 3px solid var(--main-color);
             border-style:double;
             border-radius: 2px;
@@ -1458,7 +1469,7 @@ blockquote {
         line-height: 1.5;
         padding-left: 0rem;
         padding-top: auto;
-        margin-bottom: -1rem;
+        margin-bottom: 1rem;
     }
     .home-content p{
         font-size: 2rem;
@@ -1467,9 +1478,48 @@ blockquote {
         text-indent: 20px;
         text-align: justify;
     }
-    /* .about-header1{
-        font-size: 25px;
-    } */
+    
+/* .about{
+    width: 100%;
+  
+    margin: auto;
+    padding: 3px 10px;
+    background: var(--second-bg-color);
+} */
+/* .about-content-right-container h2{
+    text-align: center;
+    font-size: 4rem;
+    padding-left: 5%;
+    opacity: 0;
+     */
+  
+
+/* .about-header2 {
+    width: 96%;
+    height: 60px;
+    margin:6% 0% -1% 1%;
+    background: gray;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--bw-bg-color);
+    background-color:var(--hd-bg-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+} */
+/* .about-header2 h2{
+    font-size: 4rem;
+    line-height:1.2;
+    padding-top: 20px;
+    padding-left: 40%;
+    /* color: var(--main-color); */
+     
+    /* padding-left: 30px; */
+    /* font-size: 40px; 
+} */
+
+
 .social-media{
     display: inline-flex;
     padding-top: 1rem;
