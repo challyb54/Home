@@ -9,7 +9,7 @@ let span = document.getElementsByTagName('scroll');
 	if (mob_view.matches)
 	 {
 	 	movePer = 100;
-	 	maxMove = 300;
+	 	maxMove = 100;
 	 }
 
 	let right_mover = ()=>{

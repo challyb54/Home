@@ -599,7 +599,7 @@ position: absolute;
 }
 
 @media (max-width: 768px) {
-    .heading h2{
+    /* .heading h2{
         font-size: 1rem;
         min-width: 99%;
         margin-left: 2px;
@@ -612,12 +612,8 @@ position: absolute;
     }
     .heading p scroll{
         font-size: 100px;
-    }
-    section .product {
-        min-width: 99%;
-        margin-left: 2px;
-        /* margin:  0 10px  0 0; */
-    }
+    } */
+   
     
 }
 .about-content-right-container {
@@ -1391,17 +1387,23 @@ blockquote {
         opacity: 0
         box-shadow:0 0 1rem var(--main-color);
     }
+    section .product {
+        min-width: 99%;
+        margin-left: 2px;
+    
+        /* margin:  0 10px  0 0; */
+    }
 
    
   
     .pages{
        position:relative;
-       /* margin-top: 1%; */
+       
        margin-left: auto;
        margin-right: auto;
        height: 100%;
-       margin-top: -15%;
-       /* margin:-17% 10px; */
+      
+ ;
        
       
     }
@@ -1477,7 +1479,7 @@ blockquote {
         line-height: 1.5;
         text-indent: 20px;
         text-align: justify;
-    }
+    } 
     
 /* .about{
     width: 100%;
