@@ -1278,7 +1278,8 @@ blockquote {
         margin-bottom:3rem;
       }
       .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-te``````'
+        mplate-columns: repeat(2, 1fr);
       }
 }
 @media(max-width:600px){
@@ -1355,12 +1356,8 @@ blockquote {
 .about1{
     width: 100%;
     display: none;
-  
-
-    /* padding: 3px 10px; */
-    background: var(--second-bg-color);
 }
-.about-header2 h2{
+/* .about-header2 h2{
     font-size:4rem;
     display: flex;
     text-align: center;
@@ -1392,7 +1389,7 @@ blockquote {
     background-color: var(--main-color);
     padding: 0px;
     opacity: 0
-}
+}*/
 .social-media{
     display: inline-flex;
     padding-top: 1rem;
@@ -1418,7 +1415,7 @@ blockquote {
     border-radius: 50%;
     z-index:2;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-}
+} 
 .social-media .icon a i{
     color: #fff;
     /* text-align: center; */
