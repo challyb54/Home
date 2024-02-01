@@ -1263,6 +1263,9 @@ blockquote {
         width: 70vw;
         margin-top: 4rem;
       }
+      .about1{
+        width: 100%;
+        display: none;}
       .about{
         flex-direction:column-reverse;
       }
@@ -1278,8 +1281,7 @@ blockquote {
         margin-bottom:3rem;
       }
       .portfolio-container{
-        grid-te``````'
-        mplate-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 }
 @media(max-width:600px){
