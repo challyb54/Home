@@ -33,6 +33,8 @@
      --nm-color:#0ef;
     --hd-bg-color2:white;
     --bw-bg-color:#161a20; */
+    --svs-color:#b2e0ee;
+    --svs-color2:var(--white);
 
 
     --bg-clr: #e9e9e9;
@@ -44,7 +46,8 @@
 }
 .dark-mode{
     --text-clr: #fcf8f8;
-    --primary-clr:#0ef; 
+    --primary-clr:#0ef;
+    --svs-color:#b2e0ee; 
 
     --hd-bg-color:#161a20;
     --hd-bg-color2:#161a20d0;
@@ -56,8 +59,9 @@
     --nm-color:rgb(255, 208, 0);
     
     --hd-bg-dark-color:#161a20;
-    --hd-bg-color2:#161a20d0;
     --bw-bg-color:#fff;
+
+    
   
 }
 .top-nav{
@@ -195,9 +199,14 @@ input:checked + label svg.moon {
     margin-top:0;
     
 }
+.home-img{
+    background: url(./images/portfolioback.png);
+    background-size: cover;
+}
 .home-img img{
     width: 35vw;
     animation:floatImage 4s ease-in-out infinite;
+   
 }
 @keyframes floatImage{
     0%{
@@ -770,6 +779,7 @@ blockquote {
     background-color:var(--hd-bg-color);
     border-radius: 5px;
 }
+
 .services-container{
     display: flex;
     justify-content: center;
@@ -788,34 +798,34 @@ blockquote {
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
     margin-bottom: 0rem;
-    color:var(--text-color);
+    color:var(--svs-color2);
     border-color:var(--main-color);
 }
 .services-container .services-box:hover {
     border-color:var(--main-color);
     transform: scale(1.02);
-    font-weight: 600;
+    font-weight: 900;
     box-shadow: none;
-    color: var(--bg-color);
+    color:var(--svs-color) ;
 }
 .services-container .services-box:nth-child(1){
     background: linear-gradient(45deg,
-                                   rgba(88, 70, 159, 0.7) 0% ,
-                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    rgba(17, 14, 31, 0.7) 0% ,
+                                    rgba(48, 39, 71, 0.7)100% ) ,
                                     url('bg1.jpg');
                                     background-size: cover;
 }
 .services-container .services-box:nth-child(2){
     background: linear-gradient(45deg,
-                                   rgba(88, 70, 159, 0.7) 0% ,
-                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   rgba(17, 14, 31, 0.7) 0% ,
+                                   rgba(48, 39, 71, 0.7)100% ) ,
                                     url('bg2.jpg');
                                     background-size: cover;
 }
 .services-container .services-box:nth-child(3){
     background: linear-gradient(45deg,
-                                   rgba(88, 70, 159, 0.7) 0% ,
-                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                   rgba(17, 14, 31, 0.7) 0% ,
+                                   rgba(48, 39, 71, 0.7)100% ) ,
                                     url('bg3.jpg');
                                     background-size: cover;
 }
@@ -829,13 +839,22 @@ blockquote {
     box-shadow: 0 0 1rem var(--main-color);
 }
 .services-box h3{
-    font-size: 2.6rem;
+    font-size: 3.2rem;
     border-top-right-radius: 5px;
 }
 .services-box p{
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     margin: 1rem 0 3rem;
     line-height: 2;
+   
+}
+.services-box img{
+    height: 5%;
+    width: 8%;
+    margin-bottom: -3px;
+    /* background-color:whitesmoke; */
+    border-radius: 100%;
+    
 }
 /*portfolio section*/
 .portfolio{
