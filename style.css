@@ -989,7 +989,13 @@ blockquote {
     margin-top: 0px;
     background-color:rgb(255, 245, 245);
   }
-  
+  .contact_top h2{
+    width: fit-content;
+    padding: 1%;
+    border-radius: 30%;
+    border: 2px solid var(--main-color);
+    background-color:var(--hd-bg-color2);
+  }
   .contact_bottom {
     padding: 10px 100px 50px 30px;
     background: whitesmoke;
@@ -1003,10 +1009,24 @@ blockquote {
     width: 50%;
     margin-top: 30px;
     margin-right: 50px;
-    border-left: 2px solid var(--main-color);
+    
     border-radius: 5px;
     padding: 0.5%;
   }
+ 
+  .contact_top .address {
+    border-left: 2px solid var(--main-color);
+  }
+  .contact_top .get_in_touch p{
+  font-weight:bolder;
+  font-size: 17px;
+  padding:0px 2px 0px 0px ;
+  line-height: 1.5;
+  margin-top: -20px;
+  /* text-align: center; */
+  border-left:none;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
   
   .contact_top .get_in_touch,
   .contact_bottom .info {
@@ -1287,8 +1307,8 @@ blockquote {
     .navbar{
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 40%;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
@@ -1594,7 +1614,7 @@ blockquote {
         
        margin-top:30px;
        position: absolute;
-        margin-left: 150px;
+        margin-left: 140px;
      }
     .footer p{  
         text-align: center;
