@@ -452,7 +452,8 @@ span{
     font-size: 4.5rem;
 }
 
-.about1{
+.about1
+{
     width: 100%;
     /*background: red;*/
     margin: auto;
@@ -1046,10 +1047,14 @@ blockquote {
     width: 60%;
     margin-left: 0px;
     padding: 2%;
+  
+        
 
   }
   .contact_bottom .about h2{
     color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
   }
   
   .address ul li .icon,
@@ -1064,7 +1069,15 @@ blockquote {
   
   .contact_bottom p {
     color: green;
+    
   }
+  .more p{
+    padding: 3% 5%;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 3px;}
   
   .contact_bottom .nav_links ul li a:hover {
     text-decoration: underline;
@@ -1124,6 +1137,8 @@ blockquote {
   
   .contact_form .input_field button:hover{
     opacity: 0.8;
+    border-radius: 5px;
+
   }
   
    @media screen and (max-width: 600px){
@@ -1165,11 +1180,27 @@ blockquote {
        padding: 20px 30px;
        border-top: 2px solid var(--bg-clr)
      }
+     .contact_bottom {
+        background:none;
+        border: 2px solid var(--main-color);
+        padding-bottom: 0px;
+        margin-bottom:0px;
+       
+     }
+     .more p{
+        padding: 5% 5%;
+        font-style: oblique;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        text-align: center;
+        margin: 5px;
+     }
      .contact_bottom .about{
         
-        margin: 0px;
+        margin:5px 10% 5px -10%;
         width: fit-content;
-        width: 120%;
+        width: 150%;
+
       
        /* width: fit-content; */
      }
@@ -1177,7 +1208,7 @@ blockquote {
        flex-direction: column;
      }
      .contact_bottom .info .about{
-       margin-bottom: 30px;
+       /* margin-bottom: 30px; */
        
      }
      .contact_bottom .nav_links ul    {
@@ -1193,12 +1224,19 @@ blockquote {
     flex-direction: wrap;
     padding:2rem 9%;
     background: var(--bg-color);
+  
 
 }
 .footer-text p{
     font-size:1.6rem;
     text-align: center;
     align-items: center;
+    /* background-color: var(--hd-bg-color); */
+    bottom: 0;
+    width:max-content;
+    padding-top:30px;
+    height: 50px;
+    
 }
 .footer-iconTop a{
     display: inline-flex;
@@ -1413,7 +1451,8 @@ blockquote {
 }*/
 .social-media{
     display: inline-flex;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    margin-bottom: -40px;
 }
 .social-media .icon{
     margin: 0 10px;
@@ -1429,9 +1468,9 @@ blockquote {
     position: relative;
     height: 40px;
     width: 40px;
-    /* margin: 0 10px; */
+    margin: 0 10px;
     display: block;
-    background-color: #0ef;
+    background-color:var(--main-color);
     text-align: center;
     border-radius: 50%;
     z-index:2;
@@ -1518,7 +1557,7 @@ blockquote {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin:3rem 1.5rem 3rem 0;
+    margin:4rem 1.5rem 3rem 0;
     transition: .5 ease;
 
 }
@@ -1530,6 +1569,7 @@ blockquote {
 .portfolio{
     height:250%
 }
+
 @media(max-width:455px){
         html{
             font-size: 50%;
@@ -1547,7 +1587,15 @@ blockquote {
     }
     .footer{
         flex-direction: column-reverse;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
+    .footer-iconTop a{
+        
+       margin-top:30px;
+       position: absolute;
+        margin-left: 150px;
+     }
     .footer p{  
         text-align: center;
         margin-top: 2rem;
