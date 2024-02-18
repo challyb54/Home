@@ -345,10 +345,15 @@
               </div>
             </div>
             <div class="contact_form">
-              <form action="https://api.web3forms.com/submit" method="POST">
-              <form onsubmit="emailSend(); reset(); return false;">
+              <form action="https://formsubmit.co/challytechfast@gmail.com" method="POST">
+                <!--Honeypot-->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- Disable Capture-->
+                <input type="hidden" name="_next" value="https://challyb54.github.io/Home/"> 
+
+              <!-- <form onsubmit="emailSend(); reset(); return false;"> -->
                 <h2>CONTACT ME</h2>
-                <input type="hidden" name="access_key"  value="f4506408-37f0-4ab4-a9e7-7d1d68a1c0c0">
+                <!-- <input type="hidden" name="access_key"  value="f4506408-37f0-4ab4-a9e7-7d1d68a1c0c0"> -->
                 <div class="input_field">
                   <input type="text" placeholder="Your Name" name="fullName"  id="contact-name" onkeyup="validateName()"/>
                   <span id="name-error"></span>
@@ -367,7 +372,7 @@
                   <span id="message-error"></span>
                 </div>
                 <div class="input_field">
-                  <button type="submit" onclick="return validateForm()" onclick="emailSend()">SEND</button>
+                  <button type="submit" onclick="return validateForm()">SEND</button>
                   <span id="submit-error"></span>
                 </div>
                 <input type='reset' value='Reset' name='reset'> 
@@ -471,7 +476,7 @@
     <script src="mode.js"></script>
     <script src="cv.js"></script>
     <script src="validate.js"></script>
-    <script src="sendmail.js"></script> 
+    <!-- <script src="sendmail.js"></script>  -->
 
 
     <script src="https://kit.fontawesome.com/3ef3559250.js" crossorigin="anonymous"></script>
