@@ -349,7 +349,10 @@
                 <!--Honeypot-->
                 <input type="text" name="_honey" style="display: none;">
                 <!-- Disable Capture-->
-                <input type="hidden" name="_next" value="https://challyb54.github.io/Home/"> 
+                
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://challyb54.github.io/Home/ "> 
 
               <!-- <form onsubmit="emailSend(); reset(); return false;"> -->
                 <h2>CONTACT ME</h2>
@@ -368,7 +371,7 @@
                   <span id="email-error"></span>
                 </div>
                 <div class="input_field">
-                  <textarea placeholder="Message" name="" id="sent-message" onkeyup="validateMessage()"></textarea>
+                  <textarea placeholder="Message" name="sentMessage" id="sent-message" onkeyup="validateMessage()"></textarea>
                   <span id="message-error"></span>
                 </div>
                 <div class="input_field">
