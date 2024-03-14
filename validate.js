@@ -74,3 +74,15 @@ function validateForm(){
         return false;
     }
 }
+
+
+// for popUp Thankyou note after click send
+let popUp = document.getElementById("popUp");
+
+function openPopUp(){
+    popUp.classList.add("open-popUp");
+}
+
+function closePopUp(){
+    popUp.classList.remove("open-popUp");
+}

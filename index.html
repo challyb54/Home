@@ -1,4 +1,4 @@
-!!DOCTYPE <html>
+<html>
     <html lang="en">
 
     <head>
@@ -311,6 +311,13 @@
          <!-- Contact section design-->
          <section class="contact" id="contact">
             <h3 class="heading"> Contact <span>Me!</span></h3>
+            <div class="popUp" id="popUp" >
+              <img src ="tick.png">
+              <h2>Thank You!</h2>
+              <p>Your details has been successfully submitted.Thanks</p>
+              <button type="button" onclick="closePopUp()">Ok</button>
+            </div>
+
             <div class="contactBody">
             <div class="contact_top">
               <h2>GET IN TOUCH</h2>
@@ -351,8 +358,7 @@
                 <!-- Disable Capture-->
                 
                 <input type="hidden" name="_captcha" value="false">
-
-                <input type="hidden" name="_next" value="https://challyb54.github.io/Home/ "> 
+                <input type="hidden" name="_next" value="https://challyb54.github.io/Home/">  
 
               <!-- <form onsubmit="emailSend(); reset(); return false;"> -->
                 <h2>CONTACT ME</h2>
@@ -378,9 +384,10 @@
                   <button type="submit" onclick="return validateForm()">SEND</button>
                   <span id="submit-error"></span>
                 </div>
-                <input type='reset' value='Reset' name='reset'> 
+                <!-- <input type='reset' value='Reset' name='reset'>  -->
               </form>
             </div>
+           
             <div class="contact_bottom">
               <div class="info">
                 <div class="about">

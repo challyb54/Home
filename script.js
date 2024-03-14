@@ -55,3 +55,5 @@ const typed = new Typed ('.multiple-text',{
     loop:false,
     onComplete:function(self) { self.cursor.remove()},
 });
+
+
